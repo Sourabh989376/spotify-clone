@@ -1,0 +1,267 @@
+body {
+    /* display: flex; */
+    font-size: 18px;
+    align-items: center;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium';
+}
+
+div {
+    border: 2px solid black;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+}
+
+.navbarLeft {
+    display: flex;
+
+}
+
+.logo {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 12px;
+    margin-top: 2px;
+}
+
+.home {
+    border-radius: 50%;
+    padding: 9px;
+    background-color: #222;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.navbarRight {
+    margin-left: 465px;
+    margin-top: 5px;
+}
+
+.mainContnr {
+    background-color: black;
+}
+
+a {
+    color: #fffefed0;
+    text-decoration: none;
+    padding: 5px;
+}
+
+input::placeholder {
+    color: #faebd789;
+    background-color: #222;
+    font-size: 18px;
+    padding: 12px;
+}
+
+
+
+.search-box {
+    position: relative;
+    width: 290px;
+    padding-top: 3px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 12px 9px 32px;
+    /* padding-left for icon space */
+    border-radius: 20px;
+    border: none;
+    background-color: #222;
+    color: white;
+}
+
+.search-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+
+.container {
+    display: flex;
+    /* position: fixed; */
+    margin-top: 8px;
+
+}
+
+.library {
+    position: fixed;
+    background-color: #3f3f3f30;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.playlist {
+    margin: 7px;
+    background-color: #222;
+    padding-left: 18px;
+    padding-bottom: 10px;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    width: 335px;
+}
+
+.playlist button {
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.playlist p {
+    font-size: 15px;
+    margin-top: -15px;
+    font-family: Arial;
+}
+
+.leftFoter {
+    margin-top: 50px;
+}
+
+.leftFoter a {
+    font-size: 13px;
+    padding-left: 15px;
+    font-family: Arial;
+    color: #ffffffc4;
+}
+
+.leftFoter button {
+    margin-top: 50px;
+    margin-left: 19px;
+    width: 110px;
+    height: 30px;
+    color: #ffffff;
+    background-color: black;
+    border: 1px solid #ffffffcf;
+    border-radius: 30px;
+    font-family: 'Lucida Sans';
+    cursor: pointer;
+}
+
+.cookie:hover {
+    text-decoration: underline;
+}
+
+.rightDiv {
+    margin-left: 400px;
+    width: 1100px;
+    border-radius: 10px;
+    margin-top: 80px;
+    height: 80vh;
+    overflow-y: auto;
+    position: fixed;
+    overflow: auto;
+}
+
+.rightDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.Slide-bar {
+    scroll-behavior: smooth;
+    overflow-X: auto;
+}
+
+.rightDiv img {
+    width: 220px;
+    height: 210px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.song-images {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+}
+
+.song-images::-webkit-scrollbar {
+    display: none;
+}
+
+.artist img {
+    border-radius: 50%;
+}
+
+.song-hover {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.play-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    color: black;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.song-hover:hover .play-icon {
+    opacity: 1;
+}
+
+
+audio {
+    display: none;
+    /* hide default audio controls */
+}
+
+.ancher a {
+    font-family: Arial;
+    font-size: 15px;
+    color: #a9a9a9c3;
+    font-weight: lighter;
+}
+
+.ancher {
+    margin-top: 8px;
+}
+
+.ancher a:hover {
+    text-decoration: underline;
+    color: #ffffffc0;
+}
+
+.footer {
+    padding-left: 60px;
+}
+
+.footer a {
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 0.1px solid #6d6d6d5b;
+
+}
+
+.icon-bar i {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon-bar i:hover {
+    background-color: #3f3f3f;
+
+}

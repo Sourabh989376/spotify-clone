@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Nav Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="mainContnr">
+        <div class="navbar">
+            <div class="navbarLeft">
+                <img src="spotifyIcon.png" width="41px" height="41px" class="logo">
+                <div class="home-icon">
+                    <img src="home.png" alt="" width="26px" class="home">
+                </div>
+                <div class="search-box">
+                    <i class="material-icons">search</i>
+                    <input type="text" placeholder="What do you want to play?" style="font-size: 20px;">
+                </div>
+            </div>
+            <div class="navbarRight">
+                <a href="#">Premium</a>
+                <a href="#">Support</a>
+                <a href="#">Download</a>
+                <span style="color: #faebd7b6; font-size: 27px; padding-left: 20px; padding-right: 18px;">|</span>
+                <img src="https://img.icons8.com/?size=100&id=102257&format=png&color=FFFFFF" alt="download"
+                    width="18px" style="margin-right:-8px; margin-bottom:-2px;">
+                <a href="#" style="margin-right: 10px;">Install App</a>
+                <a href="#" style="margin-right: 6px;">Sign up</a>
+                <button class="loginBtn" type="button"
+                    style="font-size: 14px; width: 75px; height: 50px; border-radius: 30px">Log in</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="library" style="color: #ffffffd4;">
+            <div style="display: flex;">
+                <h4 style="margin-left: 15px;">Your Library</h4>
+                <h2 style="padding-left: 220px; cursor: pointer;">+</h2>
+            </div>
+            <div class="playlist">
+                <h4>Create your first playlist</h4>
+                <p>It's easy,we'll help you</p>
+                <button>Create playlist</button>
+            </div>
+            <div class="playlist">
+                <h4>Let's find some podcasts to follow</h5>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+            </div>
+            <div class="leftFoter">
+                <a href="#">Legal</a> <a href="#"> Safety & Privacy Center </a> <a href="#">Privacy Policy</a><br>
+                <a href="#">Cookies</a> <a href="#"> About Ads</a> <a href="#">Accessibility</a><br>
+                <a href="#" class="cookie" style="font-weight:bold; color: white;">Cookies</a><br>
+                <button><i class="fa-solid fa-globe"></i> English</button>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div class="Slide-bar">
+                <div>
+                    <h2><a href="#" style="color: white;">Trending Songs</a></h2>
+                </div>
+                <div class="song-images">
+                    <div class="song-hover">
+                        <img src="sapphire.jpeg" alt="" class="sapphire">
+
+                        <div class="play-icon" onclick="togglePlay('audio-sapphire', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-sapphire" src="Sapphire_320(PagaiWorld.com).mp3"></audio>
+
+                        <div>
+                            <a href="#" style="margin-left: 22px;">Sapphire</a><br>
+                            <a href="#"
+                                style="margin-left: 25px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Ed
+                                Sheeran</a>
+                        </div>
+                    </div>
+
+                    <div class="song-hover">
+                        <img src="AjjKiRat.webp" alt="" class="ajjKiRat">
+
+                        <div class="play-icon" onclick="togglePlay('audio-ajjkirat', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-ajjkirat" src="ajj-ki-rat.mp3"></audio>
+
+                        <div>
+                            <a href="#" style="margin-left: 20px;">Ajj Ki Rat (Stree2)</a><br>
+                            <a href="#"
+                                style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">Sachin-Jigar,
+                                Madhubanti</a>
+                        </div>
+                    </div>
+
+
+                    <div class="song-hover">
+                        <img src="Satranga.jpeg" alt="" class="Satranga"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-Satranga', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-Satranga" src="satranga.mp3"></audio>
+
+                        <a href="#" style="margin-left: 17px;">Satranga(From "ANIMAL")</a><br>
+                        <a href="#"
+                            style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Arijit
+                            Singh, Shreyas</a><br>
+                        <a href="#" style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">
+                            Puranik,</a>
+                    </div>
+
+                    <div class="song-hover">
+                        <img src="TumKyaMile.jpeg" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-TumKyaMile', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-TumKyaMile" src="Tum Kya Mile.mp3"></audio>
+
+                        <a href="#" style="margin-left: 22px;">Tum Kya Mile </a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">Arijit
+                            Singh, Pritam,</a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Shreya
+                            Ghoshal</a>
+                    </div>
+
+                    <div class="song-hover">
+                        <img src="TaubaTauba.jpeg" alt="" class="Tauba-tauba"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-Tauba', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-Tauba" src="Tauba Tauba.mp3"></audio>
+
+                        <a href="#" style="margin-left: 23px;">Tauba Tauba </a><br>
+                        <a href="#"
+                            style="margin-left: 26px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Karan
+                            Aujla</a>
+                    </div>
+
+                    <div class="song-hover">
+                        <img src="HamApkeBina.jpeg" alt="" class="HamApkeBina"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-HamApkeBina', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-HamApkeBina" src="Hum Aapke Bina.mp3"></audio>
+
+                        <a href="#" style="margin-left: 20px;">Hum Aapke Bina </a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Arijit
+                            Singh,Pritam,</a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Sameer
+                            Anjan</a>
+                    </div>
+                    <div class="song-hover">
+                        <img src="AyiNai.webp" alt="" class="Ayi-nhi"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-Ayi-nhi', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-Ayi-nhi" src="Aayi Nai.mp3"></audio>
+
+                        <a href="#" style="margin-left: 20px;">Aayi Nai(From "Stree2") </a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Pawan
+                            Singh,Sachin-Jigar,</a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Simran
+                            Choudhary</a>
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <h2><a href="#" style="color: white; margin-left: 10px;">Popular Artists</a> </h2>
+                <div class="song-images">
+                    <div>
+                        <img src="arijit.avif" alt="" class="sapphire">
+                        <a href="#" style="margin-left: 80px; font-family: Arial;">Arijit Singh</a>
+                    </div>
+                    <div>
+                        <img src="pritam.jpg" alt="" class="ajjKiRat"><br>
+                        <a href="#" style="margin-left: 80px; font-family: Arial;">Pritam</a>
+                    </div>
+                    <div>
+                        <img src="jubin-natiyal.jpg" alt="" class="Satranga"><br>
+                        <a href="#" style="margin-left: 70px; font-family: Arial;">Jubin Nautiyal</a>
+                    </div>
+                    <div>
+                        <img src="shreya-ghoshal.jpg" alt="" class="TumKyaMile"><br>
+                        <a href="#" style="margin-left: 55px; font-family: Arial;">Shreya Ghoshal</a>
+                    </div>
+                    <div>
+                        <img src="dhwani.jpg" alt="" class="TumKyaMile"><br>
+                        <a href="#" style="margin-left: 50px; font-family: Arial;">Dhvani Bhanushali</a>
+                    </div>
+                    <div>
+                        <img src="sonunigam.jpg" alt="" class="TumKyaMile"><br>
+                        <a href="#" style="margin-left: 80px; font-family: Arial;">Sonu Nigam</a>
+                    </div>
+                    <div>
+                        <img src="honeysingh.jpg" alt="" class="TumKyaMile"><br>
+                        <a href="#" style="margin-left: 80px; font-family: Arial;">Honey Singh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div>
+                    <h2><a href="#" style="color: white;">Popular Albums and singles</a></h2>
+                </div>
+                <div class="song-images">
+                    <div class="song-hover">
+                        <img src="sanam-teri-kasam.jpg" alt="" class="sapphire">
+
+                        <div class="play-icon" onclick="togglePlay('audio-sanam', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-sanam" src="Sanam Teri Kasam.mp3"></audio>
+                        <a href="#" style="margin-left: 22px;">Sanam Teri Kasam</a><br>
+                        <a href="#"
+                            style="margin-left: 25px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Himesh
+                            Reshammiya,</a><br>
+                        <a href="#"
+                            style="margin-left: 25px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Sameer
+                            Anjaan,Subrat...</a>
+                    </div>
+                    <div class="song-hover">
+                        <img src="ye-jawani-hai-diwani.jpg" alt="" class="ajjKiRat"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-jawani', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-jawani" src="ye-jawani-diwani.mp3"></audio>
+
+                        <a href="#" style="margin-left: 20px;">Yeh Jawaani Hai Deewani</a><br>
+                        <a href="#"
+                            style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">Pritam
+                        </a>
+                    </div>
+                    <div class="song-hover">
+                        <img src="dilwale.jpg" alt="" class="Satranga"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-dilwale', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-dilwale" src="Dilwale.mp3"></audio>
+
+                        <a href="#" style="margin-left: 17px;">Dilwale(Original Motion</a><br>
+                        <a href="#" style="margin-left: 17px;">Picture Soundtrack)</a><br>
+                        <a href="#"
+                            style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Pritam</a><br>
+                    </div>
+
+                    <div class="song-hover">
+                        <img src="arijit-alwams.jpg" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-bestArijit', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-bestArijit" src="Best Of Arijit Singh.mp3"></audio>
+
+                        <a href="#" style="margin-left: 22px;">Ultimates Love Songs </a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">Arijit
+                            Singh</a><br>
+                    </div>
+
+                    <div class="song-hover">
+                        <img src="summer.png" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-summer', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-summer" src="Summer Fever.mp3"></audio>
+
+                        <a href="#" style="margin-left: 23px;">Summer </a><br>
+                        <a href="#"
+                            style="margin-left: 26px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Karan
+                            Aujla</a>
+                    </div>
+
+                    <div class="song-hover">
+                        <img src="badshah.png" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-badshah', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-badshah" src="Badshah PARTY Songs.mp3"></audio>
+
+                        <a href="#" style="margin-left: 20px;">Making Memories </a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">badshah</a><br>
+                    </div>
+                    <div class="song-hover">
+                        <img src="sicario.jpg" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-Shubh', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-Shubh" src="Shubh All Songs.mp3"></audio>
+
+                        <a href="#" style="margin-left: 20px;">Sicario </a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Shubh</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div>
+                    <h2><a href="#" style="color: white;">Popular radio</a></h2>
+                </div>
+                <div class="song-images">
+                    <div class="song-hover">
+                        <img src="ghoshal.jpg" alt="" class="sapphire">
+
+                        <div class="play-icon" onclick="togglePlay('audio-shreya', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-shreya" src="sreya ghosal.mp3"></audio>
+
+                        <a href="#"
+                            style="margin-left: 25px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">With Atif
+                            Aslam, shreya </a><br>
+                        <a href="#"
+                            style="margin-left: 25px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">ghoshal,
+                            Sonu Nigam...</a>
+                    </div>
+                    <div class="song-hover">
+                        <img src="diljit-radio.jpg" alt="" class="ajjKiRat"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-diljit', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-diljit" src="Top 10 songs of Diljit Dosanjh.mp3"></audio>
+
+                        <a href="#"
+                            style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">With Karan
+                            Aujla,
+                        </a>
+                        <a href="#"
+                            style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">Shubh,Sidhu
+                            Moose...
+                        </a>
+                    </div>
+                    <div class="song-hover">
+                        <img src="kk.jpg" alt="" class="Satranga"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-kk', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-kk" src="Top 5 Best songs of K.K.mp3"></audio>
+
+                        <a href="#"
+                            style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">With Atif
+                            Aslam,</a><br>
+                        <a href="#"
+                            style="margin-left: 21px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Mustafa
+                            Zahid,Pritam...
+                        </a><br>
+                    </div>
+                    <div class="song-hover">
+                        <img src="atif.jpg" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-Atif', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-Atif" src="Best of ATIF ASLAM Songs.mp3"></audio>
+
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">With
+                            Sachin-Jigar,Atif</a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb; font-size: 15px;">Aslam,Shaarib
+                            Toshi...</a><br>
+                    </div>
+                    <div class="song-hover">
+                        <img src="A.R.jpg" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-AR', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-AR" src="AR Rahman Top 5 Bollywood songs [Vx09tfjjVZ0].mp3"></audio>
+
+                        <a href="#"
+                            style="margin-left: 26px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">With
+                            Hariharan, Sid
+                        </a>
+                        <a href="#"
+                            style="margin-left: 26px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Sriram,G.V.
+                            Prakash...
+                        </a>
+                    </div>
+                    <div class="song-hover">
+                        <img src="udit.jpg" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-udit', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-udit" src="Top 5 Songs Udit Narayan And Alka.mp3"></audio>
+
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">With Kumar
+                            Sanu, Vinod</a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Rathod,
+                            Udit Narayan...</a><br>
+
+                    </div>
+                    <div class="song-hover">
+                        <img src="black.jpg" alt="" class="TumKyaMile"><br>
+
+                        <div class="play-icon" onclick="togglePlay('audio-flo', this)">
+                            <i class="fa fa-play"></i>
+                        </div>
+
+                        <audio id="audio-flo" src="F l o R i d a Greatest Hits.mp3"></audio>
+
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">With Flo
+                            Rida,</a><br>
+                        <a href="#"
+                            style="margin-left: 23px; font-family: Arial; color: #f0f8ffbb;font-size: 15px;">Rihanna,
+                            Nelly Furt... </a><br>
+
+                    </div>
+                </div>
+            </div><br><br><br>
+            <hr>
+            <br><br><br>
+            <div style="display: flex;">
+                <div class="footer">
+                    <a href="#">Company</a>
+                    <div class="ancher">
+                        <a href="#">About</a><br>
+                        <a href="#">Jobs</a><br>
+                        <a href="#">For the Record</a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a href="#"> Communities</a>
+                    <div class="ancher">
+                        <a href="#">For Artists</a><br>
+                        <a href="#">Developers</a><br>
+                        <a href="#">Advertising</a><br>
+                        <a href="#">Investors</a><br>
+                        <a href="#">Vendors</a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a href="#">Useful links</a>
+                    <div class="ancher">
+                        <a href="#">Support</a><br>
+                        <a href="#">Free Mobile App</a><br>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a href="#">Spotify Plans</a>
+                    <div class="ancher">
+                        <a href="#">Premium Individual</a><br>
+                        <a href="#">Premium Duo</a><br>
+                        <a href="#">Premium Family</a><br>
+                        <a href="#">Premium Student</a><br>
+                        <a href="#">Spotify Free</a>
+                    </div>
+                </div>
+                <div class="icon-bar">
+                    <i class="fa-brands fa-instagram" style="margin-left: 130px;"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <div class="ancher">
+
+                    </div>
+                </div>
+            </div><br><br><br>
+            <hr>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

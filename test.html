@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Nav Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="testStyle.css">
+</head>
+
+<body>
+    <div class="mainContnr">
+        <div class="navbar">
+            <div class="navbarLeft">
+                <img src="spotifyIcon.png" alt="Spotify Logo" class="logo" width="41" height="41">
+                <div class="home-icon">
+                    <img src="home.png" alt="Home" class="home" width="26">
+                </div>
+                <div class="search-box">
+                    <i class="material-icons">search</i>
+                    <input type="text" placeholder="What do you want to play?">
+                </div>
+            </div>
+            <div class="navbarRight">
+                <a href="#">Premium</a>
+                <a href="#">Support</a>
+                <a href="#">Download</a>
+                <span class="divider">|</span>
+                <img src="https://img.icons8.com/?size=100&id=102257&format=png&color=FFFFFF" alt="Install Icon"
+                    width="18">
+                <a href="#">Install App</a>
+                <a href="#">Sign up</a>
+                <button class="loginBtn">Log in</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="library">
+            <div class="library-header">
+                <h4>Your Library</h4>
+                <h2 class="add-button">+</h2>
+            </div>
+
+            <div class="playlist">
+                <h4>Create your first playlist</h4>
+                <p>It's easy, we'll help you</p>
+                <button>Create playlist</button>
+            </div>
+
+            <div class="playlist">
+                <h4>Let's find some podcasts to follow</h4>
+                <p>We'll keep you updated on new episodes</p>
+                <button>Browse podcasts</button>
+            </div>
+
+            <div class="leftFooter">
+                <a href="#">Legal</a>
+                <a href="#">Safety & Privacy Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+                <a href="#" class="cookie">Cookies</a>
+                <button><i class="fa-solid fa-globe"></i> English</button>
+            </div>
+        </div>
+
+        <div class="rightDiv">
+            <section class="Slide-bar">
+                <h2><a href="#">Trending Songs</a></h2>
+                <div class="song-images">
+                    <div class="song-item">
+                        <img src="sapphire.jpeg" alt="Sapphire" class="song-cover">
+                        <div class="player-container" onclick="togglePlay()">
+                            <span id="icon" class="icon">▶</span>
+                        </div>
+                        <audio id="myAudio" src="Sapphire_320(PagaiWorld.com).mp3"></audio>
+                        <div class="song-info">
+                            <a href="#">Sapphire</a>
+                            <a href="#" class="song-artist">Ed Sheeran</a>
+                        </div>
+                    </div>
+                    <!-- Repeat .song-item div for each song -->
+                </div>
+            </section>
+
+            <section class="artist">
+                <h2><a href="#">Popular Artists</a></h2>
+                <div class="song-images">
+                    <div class="artist-item">
+                        <img src="arijit.avif" alt="Arijit Singh" class="artist-img">
+                        <a href="#">Arijit Singh</a>
+                    </div>
+                    <!-- Repeat .artist-item div for each artist -->
+                </div>
+            </section>
+
+            <section class="albums">
+                <h2><a href="#">Popular Albums and Singles</a></h2>
+                <div class="song-images">
+                    <div class="album-item">
+                        <img src="sanam-teri-kasam.jpg" alt="Sanam Teri Kasam" class="album-img">
+                        <a href="#">Sanam Teri Kasam</a>
+                        <a href="#" class="song-artist">Himesh Reshammiya</a>
+                    </div>
+                    <!-- Repeat .album-item div for each album -->
+                </div>
+            </section>
+
+            <section class="radio">
+                <h2><a href="#">Popular Radio</a></h2>
+                <div class="song-images">
+                    <div class="radio-item">
+                        <img src="ghoshal.jpg" alt="Radio 1" class="radio-img">
+                        <a href="#" class="song-artist">With Atif Aslam, Shreya Ghoshal</a>
+                    </div>
+                    <!-- Repeat .radio-item div for each radio -->
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <hr>
+                <div class="footer-sections">
+                    <div class="footer">
+                        <a href="#">Company</a>
+                        <div class="ancher">
+                            <a href="#">About</a>
+                            <a href="#">Jobs</a>
+                            <a href="#">For the Record</a>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a href="#">Communities</a>
+                        <div class="ancher">
+                            <a href="#">For Artists</a>
+                            <a href="#">Developers</a>
+                            <a href="#">Advertising</a>
+                            <a href="#">Investors</a>
+                            <a href="#">Vendors</a>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a href="#">Useful Links</a>
+                        <div class="ancher">
+                            <a href="#">Support</a>
+                            <a href="#">Free Mobile App</a>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a href="#">Spotify Plans</a>
+                        <div class="ancher">
+                            <a href="#">Premium Individual</a>
+                            <a href="#">Premium Duo</a>
+                            <a href="#">Premium Family</a>
+                            <a href="#">Premium Student</a>
+                            <a href="#">Spotify Free</a>
+                        </div>
+                    </div>
+                    <div class="icon-bar">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+                <hr>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const audio = document.getElementById('myAudio');
+        const icon = document.getElementById('icon');
+
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                icon.textContent = '❚❚';
+            } else {
+                audio.pause();
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</body>
+
+</html>
